@@ -1,0 +1,40 @@
+.nav-bar-right-section {
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  left: auto;
+  right: 40px;
+  z-index: 10;
+  color: var(--light-slate);
+}
+
+.gmail-link {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.gmail-link a {
+  margin: 20px auto;
+  padding: 10px;
+  font-size: var(--fz-sm);
+  line-height: var(--fz-lg);
+  letter-spacing: 0.2em;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+}
+
+.gmail-link a:hover{
+    color: var(--green);
+}
+
+.gmail-link:after {
+    content:"";
+    display: block;
+    width: 1px;
+    height: 170px;
+    margin: 0 auto;
+    background-color: var(--slate);
+}

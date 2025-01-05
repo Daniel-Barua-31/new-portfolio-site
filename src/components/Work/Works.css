@@ -1,0 +1,114 @@
+.work-container {
+  position: relative;
+}
+
+.project-image img {
+  border-radius: var(--border-radius);
+  box-shadow: 0 10px 30px -15px var(--navy-shadow);
+  background-color: transparent;
+  width: 620px;
+  height: 400px;
+  object-fit: cover;
+  mix-blend-mode: screen;
+  transition: 0.4s;
+  filter: grayscale(100%) contrast(1);
+}
+
+.project-image img:hover{
+  border-radius: 0;
+  mix-blend-mode: normal;
+  filter: brightness(100%);
+  transform: translate(-15px, -15px);
+}
+
+.project-image img:hover + .project-description{
+    width: 300px;
+}
+
+.project-content {
+  /* border: 2px solid red; */
+  text-align: right;
+  position: absolute;
+  top: 20%;
+  left: 500px;
+  z-index: 1;
+  max-width: 900px;
+}
+
+.project-content h1 {
+  font-size: 32px;
+  color: var(--lightest-slate);
+}
+
+.project-content p,
+li {
+  font-size: 18px;
+  color: var(--slate);
+}
+
+.project-content li {
+  list-style: none;
+}
+
+.project-content ul {
+  display: flex;
+  justify-content: right;
+  text-align: left;
+  gap: 13px;
+}
+
+.project-content h3 {
+  font-size: 24px;
+  color: var(--green);
+}
+
+.project-description {
+  box-shadow: 0 10px 30px -15px var(--navy-shadow);
+  transition: var(--transition);
+  position: relative;
+  z-index: 2;
+  padding: 25px;
+  border-radius: var(--border-radius);
+  background-color: var(--light-navy);
+  color: var(--light-slate);
+  max-width: 450px;
+}
+
+.project-description p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+}
+
+
+
+
+.works-icon a {
+  font-size: 24px;
+  color: var(--slate);
+}
+
+.works-icon a:hover{
+  color: var(--green);
+}
+
+.work-hidden {
+  opacity: 0;
+  filter: blur(-5px);
+  transform: translateX(-50%);
+  transition: all 0.5s ease-in-out;
+}
+
+.work-transition{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  transition: all 0.5s ease-in-out;
+}
+
+.work-transition:nth-child(1){
+  transition-delay: 300ms;
+}

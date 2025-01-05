@@ -1,0 +1,187 @@
+.contact-me-section {
+  margin: 0px auto;
+  padding: 100px 0px;
+  max-width: 1000px;
+}
+
+.section-paragraph {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+  color: var(--slate);
+  max-width: 450px;
+  text-align: center;
+  margin: 0px auto;
+  margin-bottom: 50px;
+}
+
+#checkcontact{
+    position: absolute;
+    left: -99999px;
+}
+
+#checkcontact:checked + .form {
+  max-height: 1000px;
+}
+
+.form {
+  max-width: 1000px;
+  overflow: hidden;
+  max-height: 0px;
+  -webkit-transition: all linear 1s;
+  -moz-transition: all linear 1s;
+  -o-transition: all linear 1s;
+  -ms-transition: all linear 1s;
+  transition: all linear 1s;
+}
+
+.input-wrapper {
+  position: relative;
+}
+.textarea-wrapper textarea {
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+  background: white;
+  border: 1px solid var(--green);
+  box-shadow: 0 0 1px 0 #e4e4e4;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 1em;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -ms-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+  color: #5e5e5e;
+}
+.input-wrapper input[type="text"],
+input[type="email"] {
+  margin-top: 1em;
+  display: block;
+  width: 100%;
+  background: white;
+  border: 1px solid var(--green);
+  box-shadow: 0 0 1px 0 #e4e4e4;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 1em;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -ms-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+  color: #5e5e5e;
+  text-indent: 15%;
+}
+.input-wrapper input[type="text"]:focus,
+.input-wrapper input[type="email"]:focus {
+  background: rgba(242, 56, 90, 0.05);
+  outline: none;
+  text-indent: 0;
+}
+.input-wrapper label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: var(--lightest-navy);
+  color: var(--slate);
+  font-family: Oswald, sans-serif;
+  box-sizing: border-box;
+  width: 15%;
+  text-align: center;
+  line-height: 2.8em;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -ms-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+.input-wrapper input[type="text"]:focus + label {
+  left: 85%;
+}
+
+.input-wrapper input[type="email"]:focus + label {
+  left: 85%;
+}
+
+.textarea-wrapper textarea {
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+  min-height: 150px;
+  background: white;
+  border: 1px solid var(--green);
+  box-shadow: 0 0 1px 0 #e4e4e4;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 1em;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -ms-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+  color: #5e5e5e;
+}
+.textarea-wrapper textarea:focus {
+  background: rgba(242, 56, 90, 0.05);
+  outline: none;
+}
+
+.button {
+
+    max-width: 100px;
+  color: var(--green);
+  background-color: transparent;
+  border: 1px solid var(--green);
+  border-radius: var(--border-radius);
+  padding: 1.25rem 1.75rem;
+  font-size: var(--fz-sm);
+  font-family: var(--font-mono);
+  line-height: 1;
+  text-decoration: none;
+  transition: var(--transition);
+  margin-top: 50px;
+}
+
+.button:hover {
+  outline: none;
+  box-shadow: 4px 4px 0 0 #56ddc0;
+  transform: translate(-5px, -5px);
+}
+
+.contact-me-section label .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+}
+
+.form input[type="submit"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+}
+
+
+.contact-me-hidden {
+  opacity: 0;
+  filter: blur(-5px);
+  transform: translateY(-50%);
+  transition: all 0.5s ease-in-out;
+}
+
+.contact-me-transition{
+  opacity: 1;
+  filter:  blur(0px);
+  transform: translateY(0);
+  transition: all 0.5s ease-in-out;
+}

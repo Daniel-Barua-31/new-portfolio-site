@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "projectName": "Zakat Calculator App",
+    "projectDescription": "A comprehensive mobile application for calculating and managing Zakat donations with real-time currency and gold/silver price updates.",
+    "techs": ["Flutter", "Dart", "Hive"],
+    "githubLink": "https://github.com/Daniel-Barua-31/Zakat-3.1.git",
+    "hostLink": "https://example-host.com/zakat-calculator",
+    "image": "https://i.ibb.co.com/FwZ1D0L/Screenshot-166.webp"
+  },
+  {
+    "id": 2,
+    "projectName": "Portfolio Website",
+    "projectDescription": "A personal portfolio website showcasing projects, skills, and contact information using modern web development tools.",
+    "techs": ["React", "Plain CSS"],
+    "githubLink": "https://github.com/username/portfolio-website",
+    "hostLink": "https://username.github.io/portfolio",
+    "image": "https://i.ibb.co.com/VVYz2my/Screenshot-178.webp"
+  },
+  {
+    "id": 3,
+    "projectName": "Train Management System",
+    "projectDescription": "Developed a Laravel and Bootstrap train management system with user-friendly scheduling, ticket booking, and real-time status updates",
+    "techs": ["JavaScript", "Laravel", "Boostrap"],
+    "githubLink": "https://github.com/username/e-commerce-platform",
+    "hostLink": "https://ecommerce.example.com",
+    "image": "https://i.ibb.co.com/3m2G6KP/Screenshot-166.png"
+  }
+]
