@@ -1,5 +1,4 @@
 import './Heading.css'
-
 const Heading = ({titleName}) => {
   return (
     <div>

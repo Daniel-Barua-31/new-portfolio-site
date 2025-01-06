@@ -1,3 +1,8 @@
+body {
+  counter-reset: section;
+}
+
+
 .sub-container-title {
   display: flex;
   gap: 12px;
@@ -27,7 +32,7 @@
 }
 
 .headline::before {
-  counter-increment: section 1;
+  counter-increment: section;
   content: "0" counter(section) ".";
   margin-right: 10px;
   font-size: 32px;

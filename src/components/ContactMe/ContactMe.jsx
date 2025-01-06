@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import "./ContactMe.css";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
+import Heading from "../Headling/Heading";
 
 const ContactMe = () => {
   const form = useRef();
@@ -17,6 +18,7 @@ const ContactMe = () => {
         (result) => {
           toast.success("Message sent successfully!");
           console.log("successful", result);
+          form.current.reset();
         },
         (error) => {
           toast.error("Failed to sent message!");
@@ -24,9 +26,7 @@ const ContactMe = () => {
         }
       );
   };
-
   const contactRef = useRef();
-
   const [inView, setInView] = useState();
   console.log("contact", inView);
   useEffect(() => {
@@ -40,6 +40,7 @@ const ContactMe = () => {
   return (
     <div id="contact" ref={contactRef}>
       <section className="contact-me-section">
+        <Heading titleName="Get In Touch" />
         <div
           className={` ${
             inView ? "contact-me-transition" : "contact-me-hidden"
@@ -64,7 +65,6 @@ const ContactMe = () => {
               {" "}
               <input type="email" name="from_email" /> <label>Email</label>{" "}
             </p>
-
             <p className="textarea-wrapper">
               {" "}
               <textarea name="message" />

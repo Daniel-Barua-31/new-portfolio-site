@@ -3,8 +3,7 @@ import './Works.css';
 import { RiGithubLine } from "react-icons/ri";
 
 const Work = ({project}) => {
-    const {image, projectName, projectDescription, techs} = project
-    console.log(project);
+    const {image, projectName, projectDescription, techs, githubLink} = project
     const refWork = useRef();
     const [inView, setInView] = useState();
     
@@ -15,7 +14,6 @@ const Work = ({project}) => {
         })
         observer.observe(refWork.current);
     })
-
 
     
     return (
@@ -34,11 +32,10 @@ const Work = ({project}) => {
                         }
                     </ul>
                     <div className='works-icon'>
-                        <a href=""> <RiGithubLine /> </a>
+                        <a href={githubLink}> <RiGithubLine /> </a>
                     </div>
                 </div>
             </div>
-
         </div>
     );
 };

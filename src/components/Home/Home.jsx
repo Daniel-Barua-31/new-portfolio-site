@@ -32,7 +32,6 @@ const Home = () => {
             I build things for web{" "}
           </span>{" "}
         </h1>
-
         <div className="sub-container">
           <p className="text-small-color-light-gray">
             {" "}
@@ -43,11 +42,10 @@ const Home = () => {
         </div>
         <div>
           <a
-            href="../../../public/assets/resume/Daniel-Resume.pdf"
-            download="Daniel-Resume.pdf"
+            href="/Daniel-Resume.pdf"
             className="btn-primary"
           >
-            Get Resume
+            Resume
           </a>
         </div>
       </div>

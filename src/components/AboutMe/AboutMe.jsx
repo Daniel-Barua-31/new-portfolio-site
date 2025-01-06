@@ -1,7 +1,7 @@
 
 import './AboutMe.css';
 import Heading from '../Headling/Heading';
-import profilepic from '../../assets/images/profilepic.webp'
+// import profilepic from '../../assets/images/profilepic.webp'
 import { useEffect, useRef, useState } from 'react';
 
 
@@ -17,7 +17,6 @@ const AboutMe = () => {
             <li> Flutter </li>       
         </>
     );
-
     const scrollRef = useRef();
 
     const [inView, setInView] = useState();
@@ -56,7 +55,7 @@ const AboutMe = () => {
                     </div>
 
                     <div className='wrapper pic-container'>
-                        <img src={profilepic} alt="image" />
+                        <img src="https://i.ibb.co.com/NFXF9QC/profilepic.webp" alt="image" />
                     </div>
                     
                 </div>               
