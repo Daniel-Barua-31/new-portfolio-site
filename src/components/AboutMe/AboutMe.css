@@ -90,3 +90,24 @@ img:hover {
   transform: translateX(0);
   transition: all 0.5s ease-in-out;
 }
+
+@media (max-width: 540px) {
+  .about-me-container {
+    flex-direction: column;
+    margin: 50px auto 0px;
+    max-width: 320px;
+  }
+
+  .written-container {
+    max-width: 300px;
+    font-size: 18px;
+  }
+
+  .pic-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 300px;
+    padding: 15px;
+  }
+}

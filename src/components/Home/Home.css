@@ -69,3 +69,11 @@
   box-shadow: 4px 4px 0 0 #56ddc0;
   transform: translate(-5px, -5px);
 }
+
+
+@media (max-width: 480px){
+  .home-container{
+    font-size: 18px;
+    max-width: 300px;
+  }
+}

@@ -18,11 +18,8 @@ const AboutMe = () => {
         </>
     );
     const scrollRef = useRef();
-
     const [inView, setInView] = useState();
-
-    console.log(inView);
-    
+    console.log("About",inView);
     useEffect(()=>{
         const observer = new IntersectionObserver((entries)=> {
             const entry = entries[0];
@@ -30,8 +27,6 @@ const AboutMe = () => {
         })
         observer.observe(scrollRef.current)
     },[]);
-
-
 
     return (
         <div id="about" className="about-me-section" ref={scrollRef} >

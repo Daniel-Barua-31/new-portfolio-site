@@ -9,3 +9,14 @@
   flex-direction: column;
   gap: 56px;
 }
+
+@media (max-width: 480px) {
+  .works-section {
+    max-width: 300px;
+  }
+
+  .feature-works-container{
+    max-width: 300px;
+    margin: 0px auto;
+  }
+}

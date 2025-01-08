@@ -13,7 +13,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="main-container">
+    <div id="hero" className="main-container">
       <div
         ref={homeRef}
         className={`home-container  ${

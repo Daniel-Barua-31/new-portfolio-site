@@ -39,6 +39,13 @@ body {
   font-weight: 400;
   color: #64ffda;
 }
-
+@media (max-width:480px ){
+  .sub-container-title{
+    max-width: 300px;
+  }
+  .headline{
+    font-size: 24px;
+  }
+}
 
 

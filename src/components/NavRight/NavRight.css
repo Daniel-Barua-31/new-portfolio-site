@@ -38,3 +38,12 @@
     margin: 0 auto;
     background-color: var(--slate);
 }
+
+
+
+
+@media (max-width: 800px){
+  .nav-bar-right-section {
+    display: none;
+  }
+}

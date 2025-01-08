@@ -3,7 +3,7 @@
   width: 100%;
   box-sizing: border-box;
   justify-content: space-between;
-  padding: 20px;
+  padding: 10px 20px;
 }
 
 .visible {
@@ -12,11 +12,12 @@
   left: 0px;
   z-index: 101;
   background-color: var(--navy);
-  box-shadow: var(--navy-shadow);
+  box-shadow:  0 10px 30px -10px var(--navy-shadow);
   transition: 0.3s ease-in-out;
 }
 
 .logo-alike {
+  cursor: pointer;
   color: #56ddc0;
   font-size: 40px;
 }
@@ -55,4 +56,29 @@
 
 .number {
   color: var(--green);
+}
+
+.burger-btn{
+  font-size: var(--fz-xl);
+  color: var(--green);
+}
+
+
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+}
+
+@media (max-width: 480px) {
+  .header-container{
+    display: none;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .header-container{
+    display: none;
+  }
 }
