@@ -64,3 +64,35 @@
   transform: translateY(0);
   transition: all 1.0s ease-in-out;
 }
+
+
+@media (max-width: 480px){
+
+  .section-container{
+    justify-content: center;
+    align-items: center;
+  }
+
+  .education-container{
+    flex-direction: column;
+    justify-content: center;
+    max-width: 300px;
+    align-items: center;
+    margin: 0px auto;
+  }
+
+  .tabs{
+    flex-direction: row;
+    width: 100%;
+  }
+  .tab{
+    border-left: 0px;
+    border-bottom: 1px solid var(--slate);
+  }
+  .tab.active{
+    border-left: 0px;
+    border-bottom: 1px solid var(--green);
+  }
+
+
+}

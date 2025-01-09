@@ -5,7 +5,6 @@ import { BiMenuAltRight } from "react-icons/bi";
 import { RxCross2 } from "react-icons/rx";
 
 const Header = () => {
-  const link = <></>;
 
   const [scrollValue, setScrollValue] = useState(0);
   const [upScroll, setupScroll] = useState(false);
